@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <diagram version="8" type="SysML Internal Block Diagram" baseType="Composite Structure Diagram" abbreviation="ibd" category="SysML Diagrams">
     <requiredPlugin>com.nomagic.magicdraw.plugins.impl.sysml#SysML;MD_customization_for_SysML.mdzip;UML_Standard_Profile.mdzip</requiredPlugin>
+    <requiredPlugin>com.nomagic.magicdraw.plugins.impl.sysml#SysML;UML_Standard_Profile.mdzip;MD_customization_for_SysML.mdzip</requiredPlugin>
     <helpID>SYSMLP::SysML+Internal+Block+Diagram</helpID>
     <toolbarConfiguration>
         <category name="Common" id="COMMON_ELEMENTS_STATIC" expandedByDefault="false">
@@ -257,11 +258,10 @@
     </toolbarConfiguration>
     <icon type="small" size="16" filename="mdp://resource/com/nomagic/magicdraw/sysml/icons/diagrams/internalblockdiagram.png"></icon>
     <icon type="diagraming" size="-1" filename="mdp://resource/com/nomagic/magicdraw/sysml/icons/diagrams/internalblockdiagram.svg"></icon>
-    <module name="MD_customization_for_SysML.mdzip" location="C:\git\md-sourcecode\md\core\profiles\MD_customization_for_SysML.mdzip">
-        <root id="_12_0EAPbeta_be00301_1156851270584_552173_1"/>
-    </module>
-    <module name="UML_Standard_Profile.mdzip" location="C:\git\md-sourcecode\md\core\profiles\UML_Standard_Profile.mdzip">
         <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+    <module name="MD_customization_for_SysML.mdzip" location="D:\00 Program Files\19.0 sp3\Magic_Systems_Modeler_190_fp3_02_21\profiles\MD_customization_for_SysML.mdzip">
+        <root id="_12_0EAPbeta_be00301_1156851270584_552173_1"/>
     </module>
     <elementstyle name="Diagram">
         <PropertyVisitorAcceptor xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
@@ -368,6 +368,21 @@
         <path action="ADD_NOTE_ANCHOR"/>
     </manipulators>
     <manipulators>
+        <stereotype id="_11_5EAPbeta_be00301_1147430239267_179145_1189" name="Value Type"/>
+        <path action="ADD_GENERALIZATION"/>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_INTERFACE</target>
+            <target>ADD_DATA_TYPE</target>
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>IDaction_1161258471734_623304_0</target>
+            <target>IDaction_1161258490265_865153_0</target>
+        </path>
+    </manipulators>
+    <manipulators>
         <stereotype id="_17_0_5beta_17530432_1382589402278_962385_13079" name="Bound Reference"/>
         <path action="IDaction_1325746922046_883918_0">
             <target>IDaction_1201514667125_801175_0</target>
@@ -384,6 +399,32 @@
         <path action="ADD_NOTE_ANCHOR">
             <target>ADD_NOTE</target>
             <target>ADD_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5EAPbeta_be00301_1147436929898_779228_1998" name="Flow Specification"/>
+        <path action="ADD_GENERALIZATION"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>IDaction_1161258471734_623304_0</target>
+            <target>IDaction_1161258490265_865153_0</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_12_1_8740266_1172578094265_310701_1581" name="System Context"/>
+        <path action="MENU_SEPARATOR"/>
+        <path action="ADD_DIRECTED_COMPOSITION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_GENERALIZATION"/>
+        <path action="ADD_GENERALIZATION_OPPOSITE"/>
+        <path action="IDaction_1161258505703_142954_0"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>IDaction_1161258471734_623304_0</target>
+            <target>IDaction_1161258490265_865153_0</target>
         </path>
     </manipulators>
     <manipulators>
@@ -416,6 +457,22 @@
         <path action="IDaction_1405002551982_621273_0"/>
     </manipulators>
     <manipulators>
+        <stereotype id="_12_1_8740266_1173094714531_37548_260" name="External"/>
+        <path action="MENU_SEPARATOR"/>
+        <path action="ADD_DIRECTED_COMPOSITION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_GENERALIZATION"/>
+        <path action="ADD_GENERALIZATION_OPPOSITE"/>
+        <path action="IDaction_1161258505703_142954_0"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>IDaction_1161258471734_623304_0</target>
+            <target>IDaction_1161258490265_865153_0</target>
+        </path>
+    </manipulators>
+    <manipulators>
         <stereotype id="_12_0EAPbeta_be00301_1161355503976_51059_459" name="Constraint Parameter"/>
         <path action="IDaction_1325746922046_883918_0">
             <target>IDaction_1201514835562_480426_0</target>
@@ -426,13 +483,58 @@
         </path>
     </manipulators>
     <manipulators>
-        <stereotype id="_11_0_be00301_1147682946132_981479_8" name="Flow Port"/>
-        <path action="ADD_CONNECTOR">
-            <target>IDaction_1201514667125_801175_0</target>
+        <stereotype id="_12_1_8740266_1172578094265_388539_1575" name="Domain"/>
+        <path action="MENU_SEPARATOR"/>
+        <path action="ADD_DIRECTED_COMPOSITION">
+            <target>ADD_INTERFACE</target>
         </path>
+        <path action="ADD_GENERALIZATION"/>
+        <path action="ADD_GENERALIZATION_OPPOSITE"/>
+        <path action="IDaction_1161258505703_142954_0"/>
         <path action="ADD_NOTE_ANCHOR">
             <target>ADD_NOTE</target>
             <target>ADD_COMMENT</target>
+            <target>IDaction_1161258471734_623304_0</target>
+            <target>IDaction_1161258490265_865153_0</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_0_be00301_1147682946132_981479_8" name="Flow Port"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>IDaction_1161258471734_623304_0</target>
+            <target>IDaction_1161258490265_865153_0</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_17_0_3_17530432_1320213059640_259248_2362" name="Interface Block"/>
+        <path action="ADD_GENERALIZATION"/>
+        <path action="ADD_GENERALIZATION_OPPOSITE"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_12_1_8740266_1172578094265_375361_1577" name="System"/>
+        <path action="MENU_SEPARATOR"/>
+        <path action="ADD_DIRECTED_COMPOSITION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_GENERALIZATION"/>
+        <path action="ADD_GENERALIZATION_OPPOSITE"/>
+        <path action="IDaction_1161258505703_142954_0"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>IDaction_1161258471734_623304_0</target>
+            <target>IDaction_1161258490265_865153_0</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5EAPbeta_be00301_1147420812402_281263_364" name="Viewpoint"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>IDaction_1161258471734_623304_0</target>
+            <target>IDaction_1161258490265_865153_0</target>
         </path>
     </manipulators>
     <manipulators>
@@ -465,6 +567,23 @@
         </path>
     </manipulators>
     <manipulators>
+        <stereotype id="_11_5EAPbeta_be00301_1147430329106_6539_1367" name="Unit"/>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_INTERFACE</target>
+            <target>ADD_DATA_TYPE</target>
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_PACKAGE_IMPORT_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>IDaction_1161258471734_623304_0</target>
+            <target>IDaction_1161258490265_865153_0</target>
+        </path>
+    </manipulators>
+    <manipulators>
         <stereotype id="_11_5EAPbeta_be00301_1147424472816_170898_1144" name="Distributed Property"/>
         <path action="ADD_PORT"/>
         <path action="MENU_SEPARATOR"/>
@@ -476,16 +595,66 @@
     </manipulators>
     <manipulators>
         <stereotype id="_11_5EAPbeta_be00301_1147767804973_159489_404" name="Constraint Block"/>
-        <path action="ADD_DIRECTED_COMPOSITION"/>
-        <path action="ADD_COMPOSITION"/>
         <path action="ADD_GENERALIZATION"/>
         <path action="ADD_GENERALIZATION_OPPOSITE"/>
-        <path action="ADD_INTERFACE_REALIZATION">
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>IDaction_1161258471734_623304_0</target>
+            <target>IDaction_1161258490265_865153_0</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5EAPbeta_be00301_1147424179914_458922_958" name="Block"/>
+        <path action="IDaction_1326872644609_278979_0"/>
+        <path action="IDaction_1326872782328_533456_0"/>
+        <path action="ADD_PORT"/>
+        <path action="IDaction_1331714013447_203497_0"/>
+        <path action="MENU_SEPARATOR"/>
+        <path action="ADD_DIRECTED_COMPOSITION">
             <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_GENERALIZATION"/>
+        <path action="ADD_GENERALIZATION_OPPOSITE"/>
+        <path action="IDaction_1161258505703_142954_0"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>IDaction_1161258471734_623304_0</target>
+            <target>IDaction_1161258490265_865153_0</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_12_1_8740266_1172578094265_898135_1579" name="Subsystem"/>
+        <path action="MENU_SEPARATOR"/>
+        <path action="ADD_DIRECTED_COMPOSITION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_GENERALIZATION"/>
+        <path action="ADD_GENERALIZATION_OPPOSITE"/>
+        <path action="IDaction_1161258505703_142954_0"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>IDaction_1161258471734_623304_0</target>
+            <target>IDaction_1161258490265_865153_0</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5EAPbeta_be00301_1147430310770_313444_1322" name="QuantityKind"/>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_INTERFACE</target>
+            <target>ADD_DATA_TYPE</target>
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_PACKAGE_IMPORT_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
         </path>
         <path action="ADD_NOTE_ANCHOR">
             <target>ADD_NOTE</target>
             <target>ADD_COMMENT</target>
+            <target>IDaction_1161258471734_623304_0</target>
+            <target>IDaction_1161258490265_865153_0</target>
         </path>
     </manipulators>
     <manipulators>
@@ -499,333 +668,6 @@
             <target>ADD_COMMENT</target>
         </path>
     </manipulators>
-	<manipulators>
-        <stereotype id="_11_5EAPbeta_be00301_1147430239267_179145_1189" name="Value Type"/>
-        <path action="ADD_GENERALIZATION">
-            <target>IDaction_1156164678968_788175_0</target>
-			<target>IDaction_1348632415494_68676_0</target>
-        </path>
-        <path action="ADD_DEPENDENCY">
-            <target>IDaction_1156164654562_480223_0</target>
-            <target>IDaction_1156164720406_361366_0</target>
-            <target>ADD_INTERFACE</target>
-            <target>ADD_DATA_TYPE</target>
-            <target>IDaction_1156164678968_788175_0</target>
-            <target>IDaction_1348632415494_68676_0</target>
-            <target>ADD_PACKAGE</target>
-        </path>
-        <path action="IDaction_1156745537906_588158_0">
-            <target>IDaction_1156744065875_532307_0</target>
-        </path>
-        <path action="ADD_NOTE_ANCHOR">
-            <target>ADD_NOTE</target>
-            <target>ADD_COMMENT</target>
-            <target>IDaction_1161258471734_623304_0</target>
-            <target>IDaction_1161258490265_865153_0</target>
-        </path>
-    </manipulators>
-    <manipulators>
-        <stereotype id="_11_5EAPbeta_be00301_1147436929898_779228_1998" name="Flow Specification"/>
-        <path action="ADD_GENERALIZATION">
-            <target>IDaction_1331713746146_711068_0</target>
-        </path>
-        <path action="IDaction_1156745537906_588158_0">
-            <target>IDaction_1156744065875_532307_0</target>
-        </path>
-        <path action="ADD_NOTE_ANCHOR">
-            <target>ADD_NOTE</target>
-            <target>ADD_COMMENT</target>
-            <target>IDaction_1161258471734_623304_0</target>
-            <target>IDaction_1161258490265_865153_0</target>
-        </path>
-    </manipulators>
-    <manipulators>
-        <stereotype id="_12_1_8740266_1172578094265_310701_1581" name="System Context"/>
-        <path action="IDaction_1237457749187_904344_0"/>
-        <path action="IDaction_1327032080859_181260_0"/>
-        <path action="IDaction_1327032040578_150542_0"/>
-        <path action="IDaction_1331713818137_76413_0"/>
-        <path action="MENU_SEPARATOR"/>
-        <path action="ADD_DIRECTED_COMPOSITION">
-            <target>IDaction_1156164654562_480223_0</target>
-            <target>ADD_INTERFACE</target>
-            <target>IDaction_1156164678968_788175_0</target>
-            <target>IDaction_1348632415494_68676_0</target>
-        </path>
-        <path action="ADD_GENERALIZATION">
-            <target>IDaction_1175265647609_513299_0</target>
-        </path>
-        <path action="ADD_GENERALIZATION_OPPOSITE">
-            <target>IDaction_1175265647609_513299_0</target>
-        </path>
-        <path action="IDaction_1156745537906_588158_0">
-            <target>IDaction_1156744065875_532307_0</target>
-        </path>
-        <path action="IDaction_1161258505703_142954_0">
-            <target>IDaction_1156164654562_480223_0</target>
-        </path>
-        <path action="ADD_NOTE_ANCHOR">
-            <target>ADD_NOTE</target>
-            <target>ADD_COMMENT</target>
-            <target>IDaction_1161258471734_623304_0</target>
-            <target>IDaction_1161258490265_865153_0</target>
-        </path>
-    </manipulators>
-    <manipulators>
-        <stereotype id="_12_1_8740266_1173094714531_37548_260" name="External"/>
-        <path action="IDaction_1237457749187_904344_0"/>
-        <path action="IDaction_1327032080859_181260_0"/>
-        <path action="IDaction_1327032040578_150542_0"/>
-        <path action="IDaction_1331713818137_76413_0"/>
-        <path action="MENU_SEPARATOR"/>
-        <path action="ADD_DIRECTED_COMPOSITION">
-            <target>IDaction_1156164654562_480223_0</target>
-            <target>ADD_INTERFACE</target>
-            <target>IDaction_1156164678968_788175_0</target>
-            <target>IDaction_1348632415494_68676_0</target>
-        </path>
-        <path action="ADD_GENERALIZATION">
-            <target>IDaction_1175265579031_441048_0</target>
-        </path>
-        <path action="ADD_GENERALIZATION_OPPOSITE">
-            <target>IDaction_1175265579031_441048_0</target>
-        </path>
-        <path action="IDaction_1156745537906_588158_0">
-            <target>IDaction_1156744065875_532307_0</target>
-        </path>
-        <path action="IDaction_1161258505703_142954_0">
-            <target>IDaction_1156164654562_480223_0</target>
-        </path>
-        <path action="ADD_NOTE_ANCHOR">
-            <target>ADD_NOTE</target>
-            <target>ADD_COMMENT</target>
-            <target>IDaction_1161258471734_623304_0</target>
-            <target>IDaction_1161258490265_865153_0</target>
-        </path>
-    </manipulators>
-	<manipulators>
-        <stereotype id="_12_1_8740266_1172578094265_388539_1575" name="Domain"/>
-        <path action="IDaction_1237457749187_904344_0"/>
-        <path action="IDaction_1327032080859_181260_0"/>
-        <path action="IDaction_1327032040578_150542_0"/>
-        <path action="IDaction_1331713818137_76413_0"/>
-        <path action="MENU_SEPARATOR"/>
-        <path action="ADD_DIRECTED_COMPOSITION">
-            <target>IDaction_1156164654562_480223_0</target>
-            <target>ADD_INTERFACE</target>
-            <target>IDaction_1156164678968_788175_0</target>
-            <target>IDaction_1348632415494_68676_0</target>
-        </path>
-        <path action="ADD_GENERALIZATION">
-            <target>IDaction_1175265452171_655761_0</target>
-        </path>
-        <path action="ADD_GENERALIZATION_OPPOSITE">
-            <target>IDaction_1175265452171_655761_0</target>
-        </path>
-        <path action="IDaction_1156745537906_588158_0">
-            <target>IDaction_1156744065875_532307_0</target>
-        </path>
-        <path action="IDaction_1161258505703_142954_0">
-            <target>IDaction_1156164654562_480223_0</target>
-        </path>
-        <path action="ADD_NOTE_ANCHOR">
-            <target>ADD_NOTE</target>
-            <target>ADD_COMMENT</target>
-            <target>IDaction_1161258471734_623304_0</target>
-            <target>IDaction_1161258490265_865153_0</target>
-        </path>
-    </manipulators>
-    <manipulators>
-        <stereotype id="_11_0_be00301_1147682946132_981479_8" name="Flow Port"/>
-        <path action="ADD_NOTE_ANCHOR">
-            <target>ADD_NOTE</target>
-            <target>ADD_COMMENT</target>
-            <target>IDaction_1161258471734_623304_0</target>
-            <target>IDaction_1161258490265_865153_0</target>
-        </path>
-    </manipulators>
-    <manipulators>
-        <stereotype id="_17_0_3_17530432_1320213059640_259248_2362" name="Interface Block"/>
-        <path action="IDaction_1327032080859_181260_0"/>
-        <path action="ADD_GENERALIZATION">
-            <target>IDaction_1326872975359_214227_0</target>
-        </path>
-        <path action="ADD_GENERALIZATION_OPPOSITE">
-            <target>IDaction_1326872975359_214227_0</target>
-        </path>
-    </manipulators>
-    <manipulators>
-        <stereotype id="_12_1_8740266_1172578094265_375361_1577" name="System"/>
-        <path action="IDaction_1237457749187_904344_0"/>
-        <path action="IDaction_1327032080859_181260_0"/>
-        <path action="IDaction_1327032040578_150542_0"/>
-        <path action="IDaction_1331713818137_76413_0"/>
-        <path action="MENU_SEPARATOR"/>
-        <path action="ADD_DIRECTED_COMPOSITION">
-            <target>IDaction_1156164654562_480223_0</target>
-            <target>ADD_INTERFACE</target>
-            <target>IDaction_1156164678968_788175_0</target>
-            <target>IDaction_1348632415494_68676_0</target>
-        </path>
-        <path action="ADD_GENERALIZATION">
-            <target>IDaction_1175265637406_599256_0</target>
-        </path>
-        <path action="ADD_GENERALIZATION_OPPOSITE">
-            <target>IDaction_1175265637406_599256_0</target>
-        </path>
-        <path action="IDaction_1156745537906_588158_0">
-            <target>IDaction_1156744065875_532307_0</target>
-        </path>
-        <path action="IDaction_1161258505703_142954_0">
-            <target>IDaction_1156164654562_480223_0</target>
-        </path>
-        <path action="ADD_NOTE_ANCHOR">
-            <target>ADD_NOTE</target>
-            <target>ADD_COMMENT</target>
-            <target>IDaction_1161258471734_623304_0</target>
-            <target>IDaction_1161258490265_865153_0</target>
-        </path>
-    </manipulators>
-    <manipulators>
-        <stereotype id="_11_5EAPbeta_be00301_1147420812402_281263_364" name="Viewpoint"/>
-        <path action="ADD_NOTE_ANCHOR">
-            <target>ADD_NOTE</target>
-            <target>ADD_COMMENT</target>
-            <target>IDaction_1161258471734_623304_0</target>
-            <target>IDaction_1161258490265_865153_0</target>
-        </path>
-    </manipulators>
-    <manipulators>
-        <stereotype id="_11_5EAPbeta_be00301_1147430329106_6539_1367" name="Unit"/>
-        <path action="ADD_DEPENDENCY">
-            <target>IDaction_1156164654562_480223_0</target>
-            <target>ADD_INTERFACE</target>
-            <target>ADD_DATA_TYPE</target>
-            <target>IDaction_1156164678968_788175_0</target>
-            <target>IDaction_1348632415494_68676_0</target>
-            <target>ADD_PACKAGE</target>
-        </path>
-        <path action="ADD_PACKAGE_IMPORT_RELATIONSHIP">
-            <target>ADD_PACKAGE</target>
-        </path>
-        <path action="IDaction_1156745537906_588158_0">
-            <target>IDaction_1156744065875_532307_0</target>
-        </path>
-        <path action="ADD_NOTE_ANCHOR">
-            <target>ADD_NOTE</target>
-            <target>ADD_COMMENT</target>
-            <target>IDaction_1161258471734_623304_0</target>
-            <target>IDaction_1161258490265_865153_0</target>
-        </path>
-    </manipulators>
-    <manipulators>
-        <stereotype id="_11_5EAPbeta_be00301_1147767804973_159489_404" name="Constraint Block"/>
-        <path action="ADD_GENERALIZATION">
-            <target>IDaction_1156164720406_361366_0</target>
-        </path>
-        <path action="ADD_GENERALIZATION_OPPOSITE">
-            <target>IDaction_1156164720406_361366_0</target>
-        </path>
-        <path action="IDaction_1156745537906_588158_0">
-            <target>IDaction_1156744065875_532307_0</target>
-        </path>
-        <path action="IDaction_1156921751890_878956_0">
-            <target>IDaction_1156744065875_532307_0</target>
-        </path>
-        <path action="ADD_NOTE_ANCHOR">
-            <target>ADD_NOTE</target>
-            <target>ADD_COMMENT</target>
-            <target>IDaction_1161258471734_623304_0</target>
-            <target>IDaction_1161258490265_865153_0</target>
-        </path>
-    </manipulators>
-    <manipulators>
-        <stereotype id="_11_5EAPbeta_be00301_1147424179914_458922_958" name="Block"/>
-        <path action="IDaction_1327032080859_181260_0"/>
-        <path action="IDaction_1327032040578_150542_0"/>
-        <path action="IDaction_1237457749187_904344_0"/>
-        <path action="IDaction_1331713818137_76413_0"/>
-        <path action="MENU_SEPARATOR"/>
-        <path action="ADD_DIRECTED_COMPOSITION">
-            <target>IDaction_1156164654562_480223_0</target>
-            <target>ADD_INTERFACE</target>
-            <target>IDaction_1156164678968_788175_0</target>
-            <target>IDaction_1348632415494_68676_0</target>
-        </path>
-        <path action="ADD_GENERALIZATION">
-            <target>IDaction_1156164654562_480223_0</target>
-        </path>
-        <path action="ADD_GENERALIZATION_OPPOSITE">
-            <target>IDaction_1156164654562_480223_0</target>
-        </path>
-        <path action="IDaction_1156745537906_588158_0">
-            <target>IDaction_1156744065875_532307_0</target>
-        </path>
-        <path action="IDaction_1161258505703_142954_0">
-            <target>IDaction_1156164654562_480223_0</target>
-        </path>
-        <path action="ADD_NOTE_ANCHOR">
-            <target>ADD_NOTE</target>
-            <target>ADD_COMMENT</target>
-            <target>IDaction_1161258471734_623304_0</target>
-            <target>IDaction_1161258490265_865153_0</target>
-        </path>
-    </manipulators>
-    <manipulators>
-        <stereotype id="_12_1_8740266_1172578094265_898135_1579" name="Subsystem"/>
-        <path action="IDaction_1237457749187_904344_0"/>
-        <path action="IDaction_1327032080859_181260_0"/>
-        <path action="IDaction_1327032040578_150542_0"/>
-        <path action="IDaction_1331713818137_76413_0"/>
-        <path action="MENU_SEPARATOR"/>
-        <path action="ADD_DIRECTED_COMPOSITION">
-            <target>IDaction_1156164654562_480223_0</target>
-            <target>ADD_INTERFACE</target>
-            <target>IDaction_1156164678968_788175_0</target>
-            <target>IDaction_1348632415494_68676_0</target>
-        </path>
-        <path action="ADD_GENERALIZATION">
-            <target>IDaction_1175265612656_578165_0</target>
-        </path>
-        <path action="ADD_GENERALIZATION_OPPOSITE">
-            <target>IDaction_1175265612656_578165_0</target>
-        </path>
-        <path action="IDaction_1156745537906_588158_0">
-            <target>IDaction_1156744065875_532307_0</target>
-        </path>
-        <path action="IDaction_1161258505703_142954_0">
-            <target>IDaction_1156164654562_480223_0</target>
-        </path>
-        <path action="ADD_NOTE_ANCHOR">
-            <target>ADD_NOTE</target>
-            <target>ADD_COMMENT</target>
-            <target>IDaction_1161258471734_623304_0</target>
-            <target>IDaction_1161258490265_865153_0</target>
-        </path>
-    </manipulators>
-    <manipulators>
-        <stereotype id="_11_5EAPbeta_be00301_1147430310770_313444_1322" name="QuantityKind"/>
-        <path action="ADD_DEPENDENCY">
-            <target>IDaction_1156164654562_480223_0</target>
-            <target>ADD_INTERFACE</target>
-            <target>ADD_DATA_TYPE</target>
-            <target>IDaction_1156164678968_788175_0</target>
-            <target>IDaction_1348632415494_68676_0</target>
-            <target>ADD_PACKAGE</target>
-        </path>
-        <path action="ADD_PACKAGE_IMPORT_RELATIONSHIP">
-            <target>ADD_PACKAGE</target>
-        </path>
-        <path action="IDaction_1156745537906_588158_0">
-            <target>IDaction_1156744065875_532307_0</target>
-        </path>
-        <path action="ADD_NOTE_ANCHOR">
-            <target>ADD_NOTE</target>
-            <target>ADD_COMMENT</target>
-            <target>IDaction_1161258471734_623304_0</target>
-            <target>IDaction_1161258490265_865153_0</target>
-        </path>
-    </manipulators>
     <manipulators>
         <stereotype id="_11_5EAPbeta_be00301_1147420760998_43940_227" name="View"/>
         <path action="ADD_NOTE_ANCHOR">
@@ -837,15 +679,8 @@
     </manipulators>
     <manipulators>
         <stereotype id="_11_5EAPbeta_be00301_1147937772815_210871_2448" name="Test Case"/>
-        <path action="IDaction_1156744552750_594607_0">
-            <target>IDaction_1156744065875_532307_0</target>
-        </path>
         <path action="ADD_DEPENDENCY">
-            <target>IDaction_1156164654562_480223_0</target>
-            <target>IDaction_1156164720406_361366_0</target>
             <target>ADD_INTERFACE</target>
-            <target>IDaction_1156164678968_788175_0</target>
-            <target>IDaction_1348632415494_68676_0</target>
             <target>ADD_PACKAGE</target>
         </path>
         <path action="ADD_NOTE_ANCHOR">
@@ -858,19 +693,11 @@
     <manipulators>
         <stereotype id="_11_5EAPbeta_be00301_1147873190330_159934_2220" name="Requirement"/>
         <path action="ADD_DEPENDENCY">
-            <target>IDaction_1156164654562_480223_0</target>
-            <target>IDaction_1156164720406_361366_0</target>
             <target>ADD_INTERFACE</target>
             <target>ADD_DATA_TYPE</target>
             <target>IDaction_1156164678968_788175_0</target>
             <target>IDaction_1348632415494_68676_0</target>
             <target>ADD_PACKAGE</target>
-        </path>
-        <path action="IDaction_1156744453093_267436_0">
-            <target>IDaction_1156744065875_532307_0</target>
-        </path>
-        <path action="IDaction_1156744539531_764525_0">
-            <target>IDaction_1156744065875_532307_0</target>
         </path>
         <path action="ADD_NOTE_ANCHOR">
             <target>ADD_NOTE</target>
