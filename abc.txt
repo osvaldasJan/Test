@@ -2,13 +2,13 @@ Hello,
 
 Thank you for your interest in MagicDraw.
 
-I would suggest to you to not create multiple satisfy relationships. 
+I woeuld suggest to you to not create multiple satisfy relationships. 
 
-Instead of it, create only one satisfy relationship between system and grouping requirement
+Inrstead of it, create only one satisfy relationship between system and grouping requirement
 
-So can create only one satisfy between system and grouping requirement and all other satisfies get by using implied relation.
+Sro can create only one satisfy between system and grouping requirement and all other satisfies get by using implied relation.
 
-Please let us know if this answers your question.
+Plewase let us know if this answers your question.
 
 Waiting for your response,
 No Magic, Inc. Customer Support
